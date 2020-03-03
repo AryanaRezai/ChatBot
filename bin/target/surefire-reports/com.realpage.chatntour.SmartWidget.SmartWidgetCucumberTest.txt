@@ -1,0 +1,10 @@
+-------------------------------------------------------------------------------
+Test set: com.realpage.chatntour.SmartWidget.SmartWidgetCucumberTest
+-------------------------------------------------------------------------------
+Tests run: 24, Failures: 2, Errors: 0, Skipped: 17, Time elapsed: 74.81 sec <<< FAILURE! - in com.realpage.chatntour.SmartWidget.SmartWidgetCucumberTest
+Then VA asks about desired home size(| QA Tester | smartWidgetrja |)  Time elapsed: 0.01 sec  <<< FAILURE!
+java.lang.AssertionError: Not able to find VA's question about home size
+
+| QA Tester | smartWidgetrja |  Time elapsed: 0.01 sec  <<< FAILURE!
+java.lang.AssertionError: Not able to find VA's question about home size
+

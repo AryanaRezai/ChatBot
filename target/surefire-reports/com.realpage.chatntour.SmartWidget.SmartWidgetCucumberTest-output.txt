@@ -1,0 +1,137 @@
+Feature: ChatTest HTML Rendering
+
+***** WebDriverManager ******
+DataManager profileDir: C:\Users\arezai\workspace\chatntour-automation-framework\target\test-classes\data\realpage
+DataManager brand: realpage
+PageFactory profile1: uat
+
+***** UIPage ******
+UIPage profileDir: C:\Users\arezai\workspace\chatntour-automation-framework\target\test-classes\data\realpage
+UIPage profile: uat
+UIPage file: C:\Users\arezai\workspace\chatntour-automation-framework\target\test-classes\data\realpage\ui-page.yaml
+UIPage yamlFile: C:\Users\arezai\workspace\chatntour-automation-framework\target\test-classes\data\realpage\ui-page.yaml
+
+***** UIPage ******
+
+***** UIPage ******
+
+***** UIPage ******
+
+***** UIPage ******
+
+***** UIPage ******
+UIPage getPages: {Domain=https://www.qa.google.com/, AdlLoginPage=https://uc-agent-desktop-uat.devplaypen.com/login, LoginPage=https://realpageos-uat.devplaypen.com/login/, ConsumerWidgetPage=https://consumerwidget-uat.devplaypen.com/widget/window/?wid=l6gSG9m8NAHKW2hRrY25Wg, LoginPagee=https://admin.rentjoy.com/login, lpBluePage=https://staging.rentjoy.com/apartment/1050-galatyn-parkway-richardson-tx-1130385?layout=2#welcome, OnePage=https://staging.rentjoy.com/apartment/, Flexloginpage=https://flex-uat.devplaypen.com, smartWidgetrja=https://realpageos-uat.devplaypen.com}
+PageFactory profileDir: C:\Users\arezai\workspace\chatntour-automation-framework\target\test-classes\data\realpage
+PageFactory profile: uat
+DataManager profile: uat
+DataManager profileDir: C:\Users\arezai\workspace\chatntour-automation-framework\target\test-classes\data\realpage
+DataManager brand: realpage
+
+***** UIComponentMapFactory ******
+UIComponentMapFactory getUIComponentMap profileDir: C:\Users\arezai\workspace\chatntour-automation-framework\target\test-classes\data\realpage
+UIComponentMapFactory getUIComponentMap profile: uat
+
+***** UIComponentMap ******
+UIComponentMapFactory buildUIComponents profileDir: C:\Users\arezai\workspace\chatntour-automation-framework\target\test-classes\data\realpage
+UIComponentMapFactory buildUIComponents profile: uat
+UIComponentMapFactory loadYamlFile profile: uat
+
+***** UIComponentMap ******
+UIComponentMapFactory buildUIComponents file: C:\Users\arezai\workspace\chatntour-automation-framework\target\test-classes\data\realpage\ui-components-chattest.yaml
+UIComponentMap addUIComponentMap map key: chattest | val: com.realpage.core.component.UIComponent@5c86a017
+UIComponentMapFactory loadYamlFile profile: uat
+
+***** UIComponentMap ******
+UIComponentMapFactory buildUIComponents file: C:\Users\arezai\workspace\chatntour-automation-framework\target\test-classes\data\realpage\ui-components-FlexLogin.yaml
+UIComponentMap addUIComponentMap map key: flexlogin | val: com.realpage.core.component.UIComponent@642a7222
+UIComponentMapFactory loadYamlFile profile: uat
+
+***** UIComponentMap ******
+UIComponentMapFactory buildUIComponents file: C:\Users\arezai\workspace\chatntour-automation-framework\target\test-classes\data\realpage\ui-components-login.yaml
+UIComponentMap addUIComponentMap map key: login | val: com.realpage.core.component.UIComponent@791d1f8b
+UIComponentMapFactory loadYamlFile profile: uat
+
+***** UIComponentMap ******
+UIComponentMapFactory buildUIComponents file: C:\Users\arezai\workspace\chatntour-automation-framework\target\test-classes\data\realpage\ui-components-smartwidget.yaml
+UIComponentMap addUIComponentMap map key: chattest | val: com.realpage.core.component.UIComponent@6f19ac19
+
+***** DataManager ******
+[INFO] Using profile: {siteDescription=Real Page, environment=uat, siteStartingUrl=https://www.realpage.com/, brand=realpage}
+
+***** WebDriverUtils ******
+WebDriverUtils embeddedRcDriver: embedded-rc:chrome
+WebDriverUtils RC_BROWSERS: chrome
+WebDriverUtils localDriver: chrome
+C:\Users\arezai\workspace\chatntour-automation-framework
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+Starting ChromeDriver 2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e) on port 23890
+Only local connections are allowed.
+[1579805558.686][WARNING]: Timed out connecting to Chrome, retrying...
+End WebDriverUtils localDriver: chrome
+End WebDriverUtils localDriver: chrome
+
+***** WebDriverUtils ******
+WebDriverUtils driver: ChromeDriver: chrome on XP (acec84468c93a451987aeaa13f097564)
+WebDriverUtils page: smartWidgetrja
+UIPage uiPageName: smartWidgetrja
+UIPage uiPageUrl: https://realpageos-uat.devplaypen.com
+https://realpageos-uat.devplaypen.com
+WebDriverUtils Url: https://realpageos-uat.devplaypen.com
+Mock Status is set: false
+Able to find page url https://realpageos-uat.devplaypen.com
+UIComponentMap getComponent key: smartwidget
+said
+A
+C
+Hi! I'm your Virtual Assistant. At any time you can type "Live Agent" to speak to a live agent.
+a few seconds ago
+1st greeting verification passed
+said
+A
+C
+I am going to ask a few simple questions.  First, would you like to chat about finding an apartment, scheduling a tour or something else?
+a few seconds ago
+2nd greeting verification passed
+
+
+  Scenario Outline: Rendering Consumer Widget Page                                                                                                                                   [90m# src/test/resources/com/realpage/components/SmartWidget/smartwidget.feature:35[0m
+    [32mGiven [0m[32m[0m[32m[1mQA Tester[0m[32m wants to navigate the content of [0m[32m[1msmartWidgetrja[0m                                                                                                                  [90m# CucumberStepDefinitions.open_site(String,String)[0m
+    [32mWhen [0m[32mUser clicks on the Start Chatting button[0m                                                                                                                                    [90m# SmartWidgetStepDefinitions.User_clicks_on_the_Start_Chatting_button()[0m
+    [32mThen [0m[32mThe first greeting is displayed "[0m[32m[1mHi! I'm your Virtual Assistant.[0m[32m"[0m                                                                                                           [90m# SmartWidgetStepDefinitions.The_first_greeting_is_displayed(String)[0m
+    [32mAnd [0m[32mThe second greeting is displayed "[0m[32m[1mI am going to ask a few simple questions.  First, would you like to chat about finding an apartment, scheduling a tour or something else?[0m[32m"[0m [90m# SmartWidgetStepDefinitions.The_second_greeting_is_displayed(String)[0m
+    [32mWhen [0m[32mContact answers find an apartment "[0m[32m[1mFind an apartment[0m[32m"[0m                                                                                                                       [90m# SmartWidgetStepDefinitions.Contact_answers_find_an_apartment(String)[0m
+    [31mThen [0m[31mVA asks about desired home size[0m                                                                                                                                             [90m# SmartWidgetStepDefinitions.VA_asks_about_desired_home_size()[0m
+      [31mjava.lang.AssertionError: Not able to find VA's question about home size
+      	at org.junit.Assert.fail(Assert.java:88)
+      	at com.realpage.chatntour.SmartWidget.SmartWidgetStepDefinitions.VA_asks_about_desired_home_size(SmartWidgetStepDefinitions.java:196)
+      	at ?.Then VA asks about desired home size(src/test/resources/com/realpage/components/SmartWidget/smartwidget.feature:12)
+      [0m
+    [36mAnd [0m[36mContact answers number of bedrooms "[0m[36m[1m2 bedrooms[0m[36m"[0m                                                                                                                              [90m# SmartWidgetStepDefinitions.Contact_answers_number_of_bedrooms(String)[0m
+    [36mThen [0m[36mVA asks about desired move in date "[0m[36m[1mGreat, when are you looking to move?[0m[36m"[0m                                                                                                   [90m# SmartWidgetStepDefinitions.VA_asks_about_desired_move_in_date(String)[0m
+    [36mAnd [0m[36mContact answers desired move in date "[0m[36m[1mNext Month[0m[36m"[0m                                                                                                                            [90m# SmartWidgetStepDefinitions.Contact_answers_desired_move_in_date(String)[0m
+    [36mThen [0m[36mVA comes back with availablity information[0m                                                                                                                                  [90m# SmartWidgetStepDefinitions.VA_comes_back_with_availablity_information()[0m
+    [36mThen [0m[36mVA asks if contact wants to schedule a tour "[0m[36m[1mWould you like to schedule a tour?[0m[36m"[0m                                                                                            [90m# SmartWidgetStepDefinitions.VA_asks_if_contact_wants_to_schedule_a_tour(String)[0m
+    [36mAnd [0m[36mContact answers the question about scheduling a tour "[0m[36m[1myes[0m[36m"[0m                                                                                                                   [90m# SmartWidgetStepDefinitions.Contact_answers_the_question_about_scheduling_a_tour(String)[0m
+    [36mThen [0m[36mVA informs that it needs some info to be able to schedule a tour "[0m[36m[1mIn order to book a tour, I need a little more information.[0m[36m"[0m                                               [90m# SmartWidgetStepDefinitions.VA_informs_that_it_needs_some_info_to_be_able_to_schedule_a_tour(String)[0m
+    [36mAnd [0m[36mVA asks for contacts first name[0m                                                                                                                                              [90m# SmartWidgetStepDefinitions.VA_asks_for_contacts_first_name()[0m
+    [36mThen [0m[36mContact answers the question about first name "[0m[36m[1mAryana[0m[36m"[0m                                                                                                                      [90m# SmartWidgetStepDefinitions.Contact_answers_the_question_about_first_name(String)[0m
+    [36mAnd [0m[36mVA asks for contacts last name[0m                                                                                                                                               [90m# SmartWidgetStepDefinitions.VA_asks_for_contacts_last_name()[0m
+    [36mThen [0m[36mContact answers the question about last name "[0m[36m[1mRezai[0m[36m"[0m                                                                                                                        [90m# SmartWidgetStepDefinitions.Contact_answers_the_question_about_last_name(String)[0m
+    [36mThen [0m[36mVA asks for contacts email address[0m                                                                                                                                          [90m# SmartWidgetStepDefinitions.VA_asks_for_contacts_email_address()[0m
+    [36mAnd [0m[36mContact answers the question about email address "[0m[36m[1maryana.rezai@realpage.com[0m[36m"[0m                                                                                                 [90m# SmartWidgetStepDefinitions.Contact_answers_the_question_about_email_address(String)[0m
+    [36mThen [0m[36mContact answers the question about phone Number "[0m[36m[1m4692165826[0m[36m"[0m                                                                                                                [90m# SmartWidgetStepDefinitions.Contact_answers_the_question_about_phone_number(String)[0m
+    [36mAnd [0m[36mVA asks for desired tour day "[0m[36m[1mWhat would be a good day for you to come visit?[0m[36m"[0m                                                                                               [90m# SmartWidgetStepDefinitions.VA_asks_for_desired_tour_day(String)[0m
+    [36mAnd [0m[36mVA displays the date calendar[0m                                                                                                                                                [90m# SmartWidgetStepDefinitions.VA_displays_the_date_calendar()[0m
+    [36mThen [0m[36mContact picks a date[0m                                                                                                                                                        [90m# SmartWidgetStepDefinitions.Contact_picks_a_date()[0m
+
+1 Scenarios ([31m1 failed[0m)
+23 Steps ([31m1 failed[0m, [36m17 skipped[0m, [32m5 passed[0m)
+1m12.389s
+
+java.lang.AssertionError: Not able to find VA's question about home size
+	at org.junit.Assert.fail(Assert.java:88)
+	at com.realpage.chatntour.SmartWidget.SmartWidgetStepDefinitions.VA_asks_about_desired_home_size(SmartWidgetStepDefinitions.java:196)
+	at ?.Then VA asks about desired home size(src/test/resources/com/realpage/components/SmartWidget/smartwidget.feature:12)
+
