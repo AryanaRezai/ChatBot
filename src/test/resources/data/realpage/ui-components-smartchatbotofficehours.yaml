@@ -1,0 +1,13 @@
+development: &id001 !!com.realpage.core.component.UIComponentMap
+  UIComponents:
+    smartchatbotofficehours:
+      UIElements:
+        questionfield: !!com.realpage.core.component.UIElement {className: null, cssSelector: "", idSelector: "ccSubject", name: "", xpathSelector: ""}
+        fnamefield: !!com.realpage.core.component.UIElement {className: null, cssSelector: "", idSelector: "chat-form-first-name", name: "", xpathSelector: ""}
+        lnamefield: !!com.realpage.core.component.UIElement {className: null, cssSelector: "", idSelector: "chat-form-last-name", name: "", xpathSelector: ""}
+        name: smartchatbotofficehours
+uat: *id001
+stage: *id001
+production: *id001
+development: *id001
+
