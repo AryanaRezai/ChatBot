@@ -12,7 +12,8 @@ uat: !!com.realpage.core.page.UIPage
     Domain: https://www.qa.google.com/
     AdlLoginPage: https://uc-agent-desktop-uat.devplaypen.com/login
     LoginPage: https://realpageos-uat.devplaypen.com/login/
-    ConsumerWidgetPage: https://consumerwidget-uat.devplaypen.com/widget/window/?wid=l6gSG9m8NAHKW2hRrY25Wg
+    ConsumerWidgetPage: https://consumerwidget-uat.devplaypen.com/widget/window/?wid=QFgy0viNPzZodzGgRiMg
+    SmartBotWidgetPage: https://consumerwidget-uat.devplaypen.com/widget/window/?wid=l6gSG9m8NAHKW2hRrY25Wg
     LoginPagee: https://admin.rentjoy.com/login
     lpBluePage: https://staging.rentjoy.com/apartment/1050-galatyn-parkway-richardson-tx-1130385?layout=2#welcome
 stage: !!com.realpage.core.page.UIPage

@@ -8,7 +8,7 @@
     <artifactId>chatntour-automation-framework</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>jar</packaging>
-    <name>ChatnTour Automation Framework</name>
+    <name>CHATNTOUR Automation Framework</name>
     <description>Cucumber Selenium Automation Platform</description>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
