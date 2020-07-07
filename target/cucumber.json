@@ -6,194 +6,7 @@
         "before": [
           {
             "result": {
-              "duration": 4843629100,
-              "status": "passed"
-            },
-            "match": {
-              "location": "CucumberStepDefinitions.createDriverInstance()"
-            }
-          }
-        ],
-        "line": 20,
-        "name": "Rendering Consumer Widget Page",
-        "description": "",
-        "id": "chattest-html-rendering;rendering-consumer-widget-page;;2",
-        "after": [
-          {
-            "result": {
-              "duration": 1258064100,
-              "status": "passed"
-            },
-            "match": {
-              "location": "CucumberStepDefinitions.disposeDriver(Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 33890969100,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "QA Tester wants to navigate the content of ConsumerWidgetPage",
-            "match": {
-              "arguments": [
-                {
-                  "val": "QA Tester",
-                  "offset": 0
-                },
-                {
-                  "val": "ConsumerWidgetPage",
-                  "offset": 43
-                }
-              ],
-              "location": "CucumberStepDefinitions.open_site(String,String)"
-            },
-            "matchedColumns": [
-              0,
-              1
-            ],
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 688494100,
-              "status": "passed"
-            },
-            "line": 8,
-            "name": "Consumer selects CHAT tab",
-            "match": {
-              "location": "SmartChatBotTestStepDefinitions.Consumer_selects_CHAT_tab()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 17322513500,
-              "status": "passed"
-            },
-            "line": 9,
-            "name": "Bot generates auto greeting",
-            "match": {
-              "location": "SmartChatBotTestStepDefinitions.Bot_generates_auto_greeting()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 1302279500,
-              "status": "passed"
-            },
-            "line": 10,
-            "name": "Prospect asks about parking policy What is your parking Policy?",
-            "match": {
-              "arguments": [
-                {
-                  "val": "What is your parking Policy?",
-                  "offset": 35
-                }
-              ],
-              "location": "SmartChatBotParkingPolicyStepDefinitions.Prospect_asks_about_parking_policy(String)"
-            },
-            "matchedColumns": [
-              2
-            ],
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 4854058600,
-              "status": "passed"
-            },
-            "line": 11,
-            "name": "Bot responds Parking Policy question \"Parking policy: Open parking at no charge\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "Parking policy: Open parking at no charge",
-                  "offset": 38
-                }
-              ],
-              "location": "SmartChatBotParkingPolicyStepDefinitions.Bot_responds_Parking_Policy_question(String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 1999970000,
-              "status": "passed"
-            },
-            "line": 12,
-            "name": "Bot asks if it can help with something else \"What else can I help you with?\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "What else can I help you with?",
-                  "offset": 45
-                }
-              ],
-              "location": "SmartChatBotOfficeHoursStepDefinitions.Bot_asks_if_it_can_help_with_something_else(String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 2121419000,
-              "status": "passed"
-            },
-            "line": 13,
-            "name": "Prospect answers nothing thanks \"Nothing\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "Nothing",
-                  "offset": 33
-                }
-              ],
-              "location": "SmartChatBotOfficeHoursStepDefinitions.Prospect_answers_nothing_thanks(String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 3606534100,
-              "status": "passed"
-            },
-            "line": 14,
-            "name": "Bot responds with Got It \"Thank you for chatting with me today! If you have additional questions, please feel free to start a new chat or call us at (972) 484-5691\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "Thank you for chatting with me today! If you have additional questions, please feel free to start a new chat or call us at (972) 484-5691",
-                  "offset": 26
-                }
-              ],
-              "location": "SmartChatBotOfficeHoursStepDefinitions.Bot_responds_with_Got_It(String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 1969646000,
-              "status": "passed"
-            },
-            "line": 15,
-            "name": "The rate conversation button is displayed",
-            "match": {
-              "location": "SmartChatBotOfficeHoursStepDefinitions.The_rate_conversation_button_is_displayed()"
-            },
-            "keyword": "And "
-          }
-        ]
-      },
-      {
-        "before": [
-          {
-            "result": {
-              "duration": 2068921800,
+              "duration": 7299071400,
               "status": "passed"
             },
             "match": {
@@ -204,11 +17,11 @@
         "line": 21,
         "name": "Rendering Consumer Widget Page",
         "description": "",
-        "id": "chattest-html-rendering;rendering-consumer-widget-page;;3",
+        "id": "chattest-html-rendering;rendering-consumer-widget-page;;2",
         "after": [
           {
             "result": {
-              "duration": 1135266200,
+              "duration": 1801537800,
               "status": "passed"
             },
             "match": {
@@ -221,7 +34,7 @@
         "steps": [
           {
             "result": {
-              "duration": 24648019900,
+              "duration": 34148233700,
               "status": "passed"
             },
             "line": 7,
@@ -247,7 +60,7 @@
           },
           {
             "result": {
-              "duration": 683037400,
+              "duration": 834701600,
               "status": "passed"
             },
             "line": 8,
@@ -259,7 +72,7 @@
           },
           {
             "result": {
-              "duration": 6338202100,
+              "duration": 20845458300,
               "status": "passed"
             },
             "line": 9,
@@ -271,19 +84,19 @@
           },
           {
             "result": {
-              "duration": 1145666200,
+              "duration": 1200354400,
               "status": "passed"
             },
             "line": 10,
-            "name": "Prospect asks about parking policy Garage",
+            "name": "Prospect asks about amenities Amenities",
             "match": {
               "arguments": [
                 {
-                  "val": "Garage",
-                  "offset": 35
+                  "val": "Amenities",
+                  "offset": 30
                 }
               ],
-              "location": "SmartChatBotParkingPolicyStepDefinitions.Prospect_asks_about_parking_policy(String)"
+              "location": "SmartChatBotAmenitiesStepDefinitions.Prospect_asks_about_amenities(String)"
             },
             "matchedColumns": [
               2
@@ -292,85 +105,139 @@
           },
           {
             "result": {
-              "duration": 3286055500,
-              "status": "passed"
+              "duration": 5799966400,
+              "error_message": "java.lang.AssertionError\r\n\tat org.junit.Assert.fail(Assert.java:86)\r\n\tat org.junit.Assert.assertTrue(Assert.java:41)\r\n\tat org.junit.Assert.assertTrue(Assert.java:52)\r\n\tat com.realpage.ui.SmartChatBotAmenities.SmartChatBotAmenitiesStepDefinitions.Bot_says_that_it_needs_more_info(SmartChatBotAmenitiesStepDefinitions.java:104)\r\n\tat ✽.Then Bot says that it needs more info \"Sounds like you have a question about our amenities, before I can get you over to someone who can help I need a little more information.\"(src/test/resources/com/realpage/components/SmartChatBotAmenities/smartchatbotamenities.feature:11)\r\n",
+              "status": "failed"
             },
             "line": 11,
-            "name": "Bot responds Parking Policy question \"Parking policy: Open parking at no charge\"",
+            "name": "Bot says that it needs more info \"Sounds like you have a question about our amenities, before I can get you over to someone who can help I need a little more information.\"",
             "match": {
               "arguments": [
                 {
-                  "val": "Parking policy: Open parking at no charge",
-                  "offset": 38
+                  "val": "Sounds like you have a question about our amenities, before I can get you over to someone who can help I need a little more information.",
+                  "offset": 34
                 }
               ],
-              "location": "SmartChatBotParkingPolicyStepDefinitions.Bot_responds_Parking_Policy_question(String)"
+              "location": "SmartChatBotAmenitiesStepDefinitions.Bot_says_that_it_needs_more_info(String)"
             },
-            "keyword": "And "
+            "keyword": "Then "
           },
           {
             "result": {
-              "duration": 2000135600,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 12,
-            "name": "Bot asks if it can help with something else \"What else can I help you with?\"",
+            "name": "Bot asks for prospects first name \"What\u0027s your first name?\"",
             "match": {
               "arguments": [
                 {
-                  "val": "What else can I help you with?",
-                  "offset": 45
+                  "val": "What\u0027s your first name?",
+                  "offset": 35
                 }
               ],
-              "location": "SmartChatBotOfficeHoursStepDefinitions.Bot_asks_if_it_can_help_with_something_else(String)"
+              "location": "SmartChatBotAmenitiesStepDefinitions.Bot_asks_for_prospects_first_name(String)"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 2112570900,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 13,
-            "name": "Prospect answers nothing thanks \"Nothing\"",
+            "name": "Prospect responses with their first name \"Aryana\"",
             "match": {
               "arguments": [
                 {
-                  "val": "Nothing",
+                  "val": "Aryana",
+                  "offset": 42
+                }
+              ],
+              "location": "SmartChatBotAmenitiesStepDefinitions.Prospect_responses_with_their_first_name(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 14,
+            "name": "Bot asks for prospects last name \"And your last name?\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "And your last name?",
+                  "offset": 34
+                }
+              ],
+              "location": "SmartChatBotAmenitiesStepDefinitions.Bot_asks_for_prospects_last_name(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 15,
+            "name": "Prospect responds with their last name \"Rezai\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Rezai",
+                  "offset": 40
+                }
+              ],
+              "location": "SmartChatBotAmenitiesStepDefinitions.Prospect_responds_with_their_last_name(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 16,
+            "name": "Bot asks for prospects email or phone number \"What is your phone number or email address?\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "What is your phone number or email address?",
+                  "offset": 46
+                }
+              ],
+              "location": "SmartChatBotAmenitiesStepDefinitions.Bot_asks_for_prospects_email_or_phone_number(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 17,
+            "name": "Prospect responds with their phone number or email \"4692165826\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "4692165826",
+                  "offset": 52
+                }
+              ],
+              "location": "SmartChatBotAmenitiesStepDefinitions.Prospect_responds_with_their_phone_number_or_email(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 18,
+            "name": "Bot routes prospect to an agent \"Let me get you to an agent that can help.\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Let me get you to an agent that can help.",
                   "offset": 33
                 }
               ],
-              "location": "SmartChatBotOfficeHoursStepDefinitions.Prospect_answers_nothing_thanks(String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 2912903400,
-              "status": "passed"
-            },
-            "line": 14,
-            "name": "Bot responds with Got It \"Thank you for chatting with me today! If you have additional questions, please feel free to start a new chat or call us at (972) 484-5691\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "Thank you for chatting with me today! If you have additional questions, please feel free to start a new chat or call us at (972) 484-5691",
-                  "offset": 26
-                }
-              ],
-              "location": "SmartChatBotOfficeHoursStepDefinitions.Bot_responds_with_Got_It(String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 1937409600,
-              "status": "passed"
-            },
-            "line": 15,
-            "name": "The rate conversation button is displayed",
-            "match": {
-              "location": "SmartChatBotOfficeHoursStepDefinitions.The_rate_conversation_button_is_displayed()"
+              "location": "SmartChatBotAmenitiesStepDefinitions.Bot_routes_prospect_to_an_agent(String)"
             },
             "keyword": "And "
           }
@@ -380,7 +247,7 @@
         "before": [
           {
             "result": {
-              "duration": 1764286500,
+              "duration": 2390110600,
               "status": "passed"
             },
             "match": {
@@ -391,11 +258,11 @@
         "line": 22,
         "name": "Rendering Consumer Widget Page",
         "description": "",
-        "id": "chattest-html-rendering;rendering-consumer-widget-page;;4",
+        "id": "chattest-html-rendering;rendering-consumer-widget-page;;3",
         "after": [
           {
             "result": {
-              "duration": 1074809100,
+              "duration": 1552025000,
               "status": "passed"
             },
             "match": {
@@ -408,7 +275,7 @@
         "steps": [
           {
             "result": {
-              "duration": 11713002100,
+              "duration": 2316639900,
               "status": "passed"
             },
             "line": 7,
@@ -434,7 +301,7 @@
           },
           {
             "result": {
-              "duration": 694485700,
+              "duration": 925751700,
               "status": "passed"
             },
             "line": 8,
@@ -446,7 +313,7 @@
           },
           {
             "result": {
-              "duration": 17174224300,
+              "duration": 19995179900,
               "status": "passed"
             },
             "line": 9,
@@ -458,19 +325,19 @@
           },
           {
             "result": {
-              "duration": 1190195500,
+              "duration": 1378789600,
               "status": "passed"
             },
             "line": 10,
-            "name": "Prospect asks about parking policy Parking cost",
+            "name": "Prospect asks about amenities Do you have a pool?",
             "match": {
               "arguments": [
                 {
-                  "val": "Parking cost",
-                  "offset": 35
+                  "val": "Do you have a pool?",
+                  "offset": 30
                 }
               ],
-              "location": "SmartChatBotParkingPolicyStepDefinitions.Prospect_asks_about_parking_policy(String)"
+              "location": "SmartChatBotAmenitiesStepDefinitions.Prospect_asks_about_amenities(String)"
             },
             "matchedColumns": [
               2
@@ -479,85 +346,380 @@
           },
           {
             "result": {
-              "duration": 3551095400,
-              "status": "passed"
+              "duration": 4158887000,
+              "error_message": "java.lang.AssertionError\r\n\tat org.junit.Assert.fail(Assert.java:86)\r\n\tat org.junit.Assert.assertTrue(Assert.java:41)\r\n\tat org.junit.Assert.assertTrue(Assert.java:52)\r\n\tat com.realpage.ui.SmartChatBotAmenities.SmartChatBotAmenitiesStepDefinitions.Bot_says_that_it_needs_more_info(SmartChatBotAmenitiesStepDefinitions.java:104)\r\n\tat ✽.Then Bot says that it needs more info \"Sounds like you have a question about our amenities, before I can get you over to someone who can help I need a little more information.\"(src/test/resources/com/realpage/components/SmartChatBotAmenities/smartchatbotamenities.feature:11)\r\n",
+              "status": "failed"
             },
             "line": 11,
-            "name": "Bot responds Parking Policy question \"Parking policy: Open parking at no charge\"",
+            "name": "Bot says that it needs more info \"Sounds like you have a question about our amenities, before I can get you over to someone who can help I need a little more information.\"",
             "match": {
               "arguments": [
                 {
-                  "val": "Parking policy: Open parking at no charge",
-                  "offset": 38
+                  "val": "Sounds like you have a question about our amenities, before I can get you over to someone who can help I need a little more information.",
+                  "offset": 34
                 }
               ],
-              "location": "SmartChatBotParkingPolicyStepDefinitions.Bot_responds_Parking_Policy_question(String)"
+              "location": "SmartChatBotAmenitiesStepDefinitions.Bot_says_that_it_needs_more_info(String)"
             },
-            "keyword": "And "
+            "keyword": "Then "
           },
           {
             "result": {
-              "duration": 2011762100,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 12,
-            "name": "Bot asks if it can help with something else \"What else can I help you with?\"",
+            "name": "Bot asks for prospects first name \"What\u0027s your first name?\"",
             "match": {
               "arguments": [
                 {
-                  "val": "What else can I help you with?",
-                  "offset": 45
+                  "val": "What\u0027s your first name?",
+                  "offset": 35
                 }
               ],
-              "location": "SmartChatBotOfficeHoursStepDefinitions.Bot_asks_if_it_can_help_with_something_else(String)"
+              "location": "SmartChatBotAmenitiesStepDefinitions.Bot_asks_for_prospects_first_name(String)"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 2109174100,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 13,
-            "name": "Prospect answers nothing thanks \"Nothing\"",
+            "name": "Prospect responses with their first name \"Aryana\"",
             "match": {
               "arguments": [
                 {
-                  "val": "Nothing",
+                  "val": "Aryana",
+                  "offset": 42
+                }
+              ],
+              "location": "SmartChatBotAmenitiesStepDefinitions.Prospect_responses_with_their_first_name(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 14,
+            "name": "Bot asks for prospects last name \"And your last name?\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "And your last name?",
+                  "offset": 34
+                }
+              ],
+              "location": "SmartChatBotAmenitiesStepDefinitions.Bot_asks_for_prospects_last_name(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 15,
+            "name": "Prospect responds with their last name \"Rezai\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Rezai",
+                  "offset": 40
+                }
+              ],
+              "location": "SmartChatBotAmenitiesStepDefinitions.Prospect_responds_with_their_last_name(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 16,
+            "name": "Bot asks for prospects email or phone number \"What is your phone number or email address?\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "What is your phone number or email address?",
+                  "offset": 46
+                }
+              ],
+              "location": "SmartChatBotAmenitiesStepDefinitions.Bot_asks_for_prospects_email_or_phone_number(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 17,
+            "name": "Prospect responds with their phone number or email \"4692165826\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "4692165826",
+                  "offset": 52
+                }
+              ],
+              "location": "SmartChatBotAmenitiesStepDefinitions.Prospect_responds_with_their_phone_number_or_email(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 18,
+            "name": "Bot routes prospect to an agent \"Let me get you to an agent that can help.\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Let me get you to an agent that can help.",
                   "offset": 33
                 }
               ],
-              "location": "SmartChatBotOfficeHoursStepDefinitions.Prospect_answers_nothing_thanks(String)"
+              "location": "SmartChatBotAmenitiesStepDefinitions.Bot_routes_prospect_to_an_agent(String)"
             },
             "keyword": "And "
-          },
+          }
+        ]
+      },
+      {
+        "before": [
           {
             "result": {
-              "duration": 3179552700,
+              "duration": 2336014600,
               "status": "passed"
             },
-            "line": 14,
-            "name": "Bot responds with Got It \"Thank you for chatting with me today! If you have additional questions, please feel free to start a new chat or call us at (972) 484-5691\"",
+            "match": {
+              "location": "CucumberStepDefinitions.createDriverInstance()"
+            }
+          }
+        ],
+        "line": 23,
+        "name": "Rendering Consumer Widget Page",
+        "description": "",
+        "id": "chattest-html-rendering;rendering-consumer-widget-page;;4",
+        "after": [
+          {
+            "result": {
+              "duration": 4232616900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "CucumberStepDefinitions.disposeDriver(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 23058636400,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "QA Tester wants to navigate the content of ConsumerWidgetPage",
             "match": {
               "arguments": [
                 {
-                  "val": "Thank you for chatting with me today! If you have additional questions, please feel free to start a new chat or call us at (972) 484-5691",
-                  "offset": 26
+                  "val": "QA Tester",
+                  "offset": 0
+                },
+                {
+                  "val": "ConsumerWidgetPage",
+                  "offset": 43
                 }
               ],
-              "location": "SmartChatBotOfficeHoursStepDefinitions.Bot_responds_with_Got_It(String)"
+              "location": "CucumberStepDefinitions.open_site(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 785903200,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Consumer selects CHAT tab",
+            "match": {
+              "location": "SmartChatBotTestStepDefinitions.Consumer_selects_CHAT_tab()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 20387879300,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Bot generates auto greeting",
+            "match": {
+              "location": "SmartChatBotTestStepDefinitions.Bot_generates_auto_greeting()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1242896500,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "Prospect asks about amenities Gym?",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Gym?",
+                  "offset": 30
+                }
+              ],
+              "location": "SmartChatBotAmenitiesStepDefinitions.Prospect_asks_about_amenities(String)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4595701100,
+              "error_message": "java.lang.AssertionError\r\n\tat org.junit.Assert.fail(Assert.java:86)\r\n\tat org.junit.Assert.assertTrue(Assert.java:41)\r\n\tat org.junit.Assert.assertTrue(Assert.java:52)\r\n\tat com.realpage.ui.SmartChatBotAmenities.SmartChatBotAmenitiesStepDefinitions.Bot_says_that_it_needs_more_info(SmartChatBotAmenitiesStepDefinitions.java:104)\r\n\tat ✽.Then Bot says that it needs more info \"Sounds like you have a question about our amenities, before I can get you over to someone who can help I need a little more information.\"(src/test/resources/com/realpage/components/SmartChatBotAmenities/smartchatbotamenities.feature:11)\r\n",
+              "status": "failed"
+            },
+            "line": 11,
+            "name": "Bot says that it needs more info \"Sounds like you have a question about our amenities, before I can get you over to someone who can help I need a little more information.\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Sounds like you have a question about our amenities, before I can get you over to someone who can help I need a little more information.",
+                  "offset": 34
+                }
+              ],
+              "location": "SmartChatBotAmenitiesStepDefinitions.Bot_says_that_it_needs_more_info(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 12,
+            "name": "Bot asks for prospects first name \"What\u0027s your first name?\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "What\u0027s your first name?",
+                  "offset": 35
+                }
+              ],
+              "location": "SmartChatBotAmenitiesStepDefinitions.Bot_asks_for_prospects_first_name(String)"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 1991117500,
-              "status": "passed"
+              "status": "skipped"
+            },
+            "line": 13,
+            "name": "Prospect responses with their first name \"Aryana\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Aryana",
+                  "offset": 42
+                }
+              ],
+              "location": "SmartChatBotAmenitiesStepDefinitions.Prospect_responses_with_their_first_name(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 14,
+            "name": "Bot asks for prospects last name \"And your last name?\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "And your last name?",
+                  "offset": 34
+                }
+              ],
+              "location": "SmartChatBotAmenitiesStepDefinitions.Bot_asks_for_prospects_last_name(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
             },
             "line": 15,
-            "name": "The rate conversation button is displayed",
+            "name": "Prospect responds with their last name \"Rezai\"",
             "match": {
-              "location": "SmartChatBotOfficeHoursStepDefinitions.The_rate_conversation_button_is_displayed()"
+              "arguments": [
+                {
+                  "val": "Rezai",
+                  "offset": 40
+                }
+              ],
+              "location": "SmartChatBotAmenitiesStepDefinitions.Prospect_responds_with_their_last_name(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 16,
+            "name": "Bot asks for prospects email or phone number \"What is your phone number or email address?\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "What is your phone number or email address?",
+                  "offset": 46
+                }
+              ],
+              "location": "SmartChatBotAmenitiesStepDefinitions.Bot_asks_for_prospects_email_or_phone_number(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 17,
+            "name": "Prospect responds with their phone number or email \"4692165826\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "4692165826",
+                  "offset": 52
+                }
+              ],
+              "location": "SmartChatBotAmenitiesStepDefinitions.Prospect_responds_with_their_phone_number_or_email(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 18,
+            "name": "Bot routes prospect to an agent \"Let me get you to an agent that can help.\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Let me get you to an agent that can help.",
+                  "offset": 33
+                }
+              ],
+              "location": "SmartChatBotAmenitiesStepDefinitions.Bot_routes_prospect_to_an_agent(String)"
             },
             "keyword": "And "
           }
@@ -568,6 +730,6 @@
     "description": "",
     "id": "chattest-html-rendering",
     "keyword": "Feature",
-    "uri": "src/test/resources/com/realpage/components/SmartChatBotParkingPolicy/smartchatbotparkingpolicy.feature"
+    "uri": "src/test/resources/com/realpage/components/SmartChatBotAmenities/smartchatbotamenities.feature"
   }
 ]

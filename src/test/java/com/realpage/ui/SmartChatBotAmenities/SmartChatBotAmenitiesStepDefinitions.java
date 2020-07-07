@@ -71,14 +71,14 @@ public class SmartChatBotAmenitiesStepDefinitions extends PageBase{
 	 *******************************************************
 	 */
 
-	@And("Prospect asks about amenities \"([^\"]*)\"$")
-	public void Prospect_asks_about_amenities(String prospectamenities) throws InterruptedException {
+	@And("Prospect asks about amenities ([^\"]+)$")
+	public void Prospect_asks_about_amenities(String Amenities) throws InterruptedException {
 
 		try {
 			
 			
            WebElement inputbox= driver.findElement(By.id("uc-message-input"));
-           inputbox.sendKeys(prospectamenities);
+           inputbox.sendKeys(Amenities);
            inputbox.sendKeys(Keys.ENTER);
            Thread.sleep(1000); 
            

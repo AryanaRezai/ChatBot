@@ -194,7 +194,7 @@ public class SmartChatBotTestStepDefinitions extends PageBase{
 
 		try {
 			WebDriverWait wait = new WebDriverWait(driver, 90);
-			WebElement moveindatepicker = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div[3]/div[2]/div[2]/div[2]/div[1]/div/div[1]/div[1]/div/div/div/div[8]/div[1]/div/div[2]/div[2]/table/tbody/tr[5]/td[3]")));
+			WebElement moveindatepicker = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div[3]/div[2]/div[2]/div[2]/div[1]/div/div[1]/div[1]/div/div/div/div[8]/div[1]/div/div[2]/div[2]/table/tbody/tr[5]/td[6]")));
             moveindatepicker.click();
             System.out.println("1");
             Thread.sleep(1000);

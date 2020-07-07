@@ -1,4 +1,4 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("src/test/resources/com/realpage/components/SmartChatBotParkingPolicy/smartchatbotparkingpolicy.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("src/test/resources/com/realpage/components/SmartChatBotAmenities/smartchatbotamenities.feature");
 formatter.feature({
   "line": 1,
   "name": "ChatTest HTML Rendering",
@@ -7,11 +7,11 @@ formatter.feature({
   "keyword": "Feature"
 });
 formatter.before({
-  "duration": 4843629100,
+  "duration": 7299071400,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 20,
+  "line": 21,
   "name": "Rendering Consumer Widget Page",
   "description": "",
   "id": "chattest-html-rendering;rendering-consumer-widget-page;;2",
@@ -39,7 +39,7 @@ formatter.step({
 });
 formatter.step({
   "line": 10,
-  "name": "Prospect asks about parking policy What is your parking Policy?",
+  "name": "Prospect asks about amenities Amenities",
   "matchedColumns": [
     2
   ],
@@ -47,27 +47,42 @@ formatter.step({
 });
 formatter.step({
   "line": 11,
-  "name": "Bot responds Parking Policy question \"Parking policy: Open parking at no charge\"",
-  "keyword": "And "
+  "name": "Bot says that it needs more info \"Sounds like you have a question about our amenities, before I can get you over to someone who can help I need a little more information.\"",
+  "keyword": "Then "
 });
 formatter.step({
   "line": 12,
-  "name": "Bot asks if it can help with something else \"What else can I help you with?\"",
+  "name": "Bot asks for prospects first name \"What\u0027s your first name?\"",
   "keyword": "And "
 });
 formatter.step({
   "line": 13,
-  "name": "Prospect answers nothing thanks \"Nothing\"",
+  "name": "Prospect responses with their first name \"Aryana\"",
   "keyword": "And "
 });
 formatter.step({
   "line": 14,
-  "name": "Bot responds with Got It \"Thank you for chatting with me today! If you have additional questions, please feel free to start a new chat or call us at (972) 484-5691\"",
+  "name": "Bot asks for prospects last name \"And your last name?\"",
   "keyword": "And "
 });
 formatter.step({
   "line": 15,
-  "name": "The rate conversation button is displayed",
+  "name": "Prospect responds with their last name \"Rezai\"",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 16,
+  "name": "Bot asks for prospects email or phone number \"What is your phone number or email address?\"",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 17,
+  "name": "Prospect responds with their phone number or email \"4692165826\"",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 18,
+  "name": "Bot routes prospect to an agent \"Let me get you to an agent that can help.\"",
   "keyword": "And "
 });
 formatter.match({
@@ -84,105 +99,144 @@ formatter.match({
   "location": "CucumberStepDefinitions.open_site(String,String)"
 });
 formatter.result({
-  "duration": 33890969100,
+  "duration": 34148233700,
   "status": "passed"
 });
 formatter.match({
   "location": "SmartChatBotTestStepDefinitions.Consumer_selects_CHAT_tab()"
 });
 formatter.result({
-  "duration": 688494100,
+  "duration": 834701600,
   "status": "passed"
 });
 formatter.match({
   "location": "SmartChatBotTestStepDefinitions.Bot_generates_auto_greeting()"
 });
 formatter.result({
-  "duration": 17322513500,
+  "duration": 20845458300,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "What is your parking Policy?",
+      "val": "Amenities",
+      "offset": 30
+    }
+  ],
+  "location": "SmartChatBotAmenitiesStepDefinitions.Prospect_asks_about_amenities(String)"
+});
+formatter.result({
+  "duration": 1200354400,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Sounds like you have a question about our amenities, before I can get you over to someone who can help I need a little more information.",
+      "offset": 34
+    }
+  ],
+  "location": "SmartChatBotAmenitiesStepDefinitions.Bot_says_that_it_needs_more_info(String)"
+});
+formatter.result({
+  "duration": 5799966400,
+  "error_message": "java.lang.AssertionError\r\n\tat org.junit.Assert.fail(Assert.java:86)\r\n\tat org.junit.Assert.assertTrue(Assert.java:41)\r\n\tat org.junit.Assert.assertTrue(Assert.java:52)\r\n\tat com.realpage.ui.SmartChatBotAmenities.SmartChatBotAmenitiesStepDefinitions.Bot_says_that_it_needs_more_info(SmartChatBotAmenitiesStepDefinitions.java:104)\r\n\tat ✽.Then Bot says that it needs more info \"Sounds like you have a question about our amenities, before I can get you over to someone who can help I need a little more information.\"(src/test/resources/com/realpage/components/SmartChatBotAmenities/smartchatbotamenities.feature:11)\r\n",
+  "status": "failed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "What\u0027s your first name?",
       "offset": 35
     }
   ],
-  "location": "SmartChatBotParkingPolicyStepDefinitions.Prospect_asks_about_parking_policy(String)"
+  "location": "SmartChatBotAmenitiesStepDefinitions.Bot_asks_for_prospects_first_name(String)"
 });
 formatter.result({
-  "duration": 1302279500,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "Parking policy: Open parking at no charge",
-      "offset": 38
+      "val": "Aryana",
+      "offset": 42
     }
   ],
-  "location": "SmartChatBotParkingPolicyStepDefinitions.Bot_responds_Parking_Policy_question(String)"
+  "location": "SmartChatBotAmenitiesStepDefinitions.Prospect_responses_with_their_first_name(String)"
 });
 formatter.result({
-  "duration": 4854058600,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "What else can I help you with?",
-      "offset": 45
+      "val": "And your last name?",
+      "offset": 34
     }
   ],
-  "location": "SmartChatBotOfficeHoursStepDefinitions.Bot_asks_if_it_can_help_with_something_else(String)"
+  "location": "SmartChatBotAmenitiesStepDefinitions.Bot_asks_for_prospects_last_name(String)"
 });
 formatter.result({
-  "duration": 1999970000,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "Nothing",
+      "val": "Rezai",
+      "offset": 40
+    }
+  ],
+  "location": "SmartChatBotAmenitiesStepDefinitions.Prospect_responds_with_their_last_name(String)"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "What is your phone number or email address?",
+      "offset": 46
+    }
+  ],
+  "location": "SmartChatBotAmenitiesStepDefinitions.Bot_asks_for_prospects_email_or_phone_number(String)"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "4692165826",
+      "offset": 52
+    }
+  ],
+  "location": "SmartChatBotAmenitiesStepDefinitions.Prospect_responds_with_their_phone_number_or_email(String)"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Let me get you to an agent that can help.",
       "offset": 33
     }
   ],
-  "location": "SmartChatBotOfficeHoursStepDefinitions.Prospect_answers_nothing_thanks(String)"
+  "location": "SmartChatBotAmenitiesStepDefinitions.Bot_routes_prospect_to_an_agent(String)"
 });
 formatter.result({
-  "duration": 2121419000,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "Thank you for chatting with me today! If you have additional questions, please feel free to start a new chat or call us at (972) 484-5691",
-      "offset": 26
-    }
-  ],
-  "location": "SmartChatBotOfficeHoursStepDefinitions.Bot_responds_with_Got_It(String)"
-});
-formatter.result({
-  "duration": 3606534100,
-  "status": "passed"
-});
-formatter.match({
-  "location": "SmartChatBotOfficeHoursStepDefinitions.The_rate_conversation_button_is_displayed()"
-});
-formatter.result({
-  "duration": 1969646000,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.after({
-  "duration": 1258064100,
+  "duration": 1801537800,
   "status": "passed"
 });
 formatter.before({
-  "duration": 2068921800,
+  "duration": 2390110600,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 21,
+  "line": 22,
   "name": "Rendering Consumer Widget Page",
   "description": "",
   "id": "chattest-html-rendering;rendering-consumer-widget-page;;3",
@@ -210,7 +264,7 @@ formatter.step({
 });
 formatter.step({
   "line": 10,
-  "name": "Prospect asks about parking policy Garage",
+  "name": "Prospect asks about amenities Do you have a pool?",
   "matchedColumns": [
     2
   ],
@@ -218,27 +272,42 @@ formatter.step({
 });
 formatter.step({
   "line": 11,
-  "name": "Bot responds Parking Policy question \"Parking policy: Open parking at no charge\"",
-  "keyword": "And "
+  "name": "Bot says that it needs more info \"Sounds like you have a question about our amenities, before I can get you over to someone who can help I need a little more information.\"",
+  "keyword": "Then "
 });
 formatter.step({
   "line": 12,
-  "name": "Bot asks if it can help with something else \"What else can I help you with?\"",
+  "name": "Bot asks for prospects first name \"What\u0027s your first name?\"",
   "keyword": "And "
 });
 formatter.step({
   "line": 13,
-  "name": "Prospect answers nothing thanks \"Nothing\"",
+  "name": "Prospect responses with their first name \"Aryana\"",
   "keyword": "And "
 });
 formatter.step({
   "line": 14,
-  "name": "Bot responds with Got It \"Thank you for chatting with me today! If you have additional questions, please feel free to start a new chat or call us at (972) 484-5691\"",
+  "name": "Bot asks for prospects last name \"And your last name?\"",
   "keyword": "And "
 });
 formatter.step({
   "line": 15,
-  "name": "The rate conversation button is displayed",
+  "name": "Prospect responds with their last name \"Rezai\"",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 16,
+  "name": "Bot asks for prospects email or phone number \"What is your phone number or email address?\"",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 17,
+  "name": "Prospect responds with their phone number or email \"4692165826\"",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 18,
+  "name": "Bot routes prospect to an agent \"Let me get you to an agent that can help.\"",
   "keyword": "And "
 });
 formatter.match({
@@ -255,105 +324,144 @@ formatter.match({
   "location": "CucumberStepDefinitions.open_site(String,String)"
 });
 formatter.result({
-  "duration": 24648019900,
+  "duration": 2316639900,
   "status": "passed"
 });
 formatter.match({
   "location": "SmartChatBotTestStepDefinitions.Consumer_selects_CHAT_tab()"
 });
 formatter.result({
-  "duration": 683037400,
+  "duration": 925751700,
   "status": "passed"
 });
 formatter.match({
   "location": "SmartChatBotTestStepDefinitions.Bot_generates_auto_greeting()"
 });
 formatter.result({
-  "duration": 6338202100,
+  "duration": 19995179900,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "Garage",
+      "val": "Do you have a pool?",
+      "offset": 30
+    }
+  ],
+  "location": "SmartChatBotAmenitiesStepDefinitions.Prospect_asks_about_amenities(String)"
+});
+formatter.result({
+  "duration": 1378789600,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Sounds like you have a question about our amenities, before I can get you over to someone who can help I need a little more information.",
+      "offset": 34
+    }
+  ],
+  "location": "SmartChatBotAmenitiesStepDefinitions.Bot_says_that_it_needs_more_info(String)"
+});
+formatter.result({
+  "duration": 4158887000,
+  "error_message": "java.lang.AssertionError\r\n\tat org.junit.Assert.fail(Assert.java:86)\r\n\tat org.junit.Assert.assertTrue(Assert.java:41)\r\n\tat org.junit.Assert.assertTrue(Assert.java:52)\r\n\tat com.realpage.ui.SmartChatBotAmenities.SmartChatBotAmenitiesStepDefinitions.Bot_says_that_it_needs_more_info(SmartChatBotAmenitiesStepDefinitions.java:104)\r\n\tat ✽.Then Bot says that it needs more info \"Sounds like you have a question about our amenities, before I can get you over to someone who can help I need a little more information.\"(src/test/resources/com/realpage/components/SmartChatBotAmenities/smartchatbotamenities.feature:11)\r\n",
+  "status": "failed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "What\u0027s your first name?",
       "offset": 35
     }
   ],
-  "location": "SmartChatBotParkingPolicyStepDefinitions.Prospect_asks_about_parking_policy(String)"
+  "location": "SmartChatBotAmenitiesStepDefinitions.Bot_asks_for_prospects_first_name(String)"
 });
 formatter.result({
-  "duration": 1145666200,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "Parking policy: Open parking at no charge",
-      "offset": 38
+      "val": "Aryana",
+      "offset": 42
     }
   ],
-  "location": "SmartChatBotParkingPolicyStepDefinitions.Bot_responds_Parking_Policy_question(String)"
+  "location": "SmartChatBotAmenitiesStepDefinitions.Prospect_responses_with_their_first_name(String)"
 });
 formatter.result({
-  "duration": 3286055500,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "What else can I help you with?",
-      "offset": 45
+      "val": "And your last name?",
+      "offset": 34
     }
   ],
-  "location": "SmartChatBotOfficeHoursStepDefinitions.Bot_asks_if_it_can_help_with_something_else(String)"
+  "location": "SmartChatBotAmenitiesStepDefinitions.Bot_asks_for_prospects_last_name(String)"
 });
 formatter.result({
-  "duration": 2000135600,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "Nothing",
+      "val": "Rezai",
+      "offset": 40
+    }
+  ],
+  "location": "SmartChatBotAmenitiesStepDefinitions.Prospect_responds_with_their_last_name(String)"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "What is your phone number or email address?",
+      "offset": 46
+    }
+  ],
+  "location": "SmartChatBotAmenitiesStepDefinitions.Bot_asks_for_prospects_email_or_phone_number(String)"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "4692165826",
+      "offset": 52
+    }
+  ],
+  "location": "SmartChatBotAmenitiesStepDefinitions.Prospect_responds_with_their_phone_number_or_email(String)"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Let me get you to an agent that can help.",
       "offset": 33
     }
   ],
-  "location": "SmartChatBotOfficeHoursStepDefinitions.Prospect_answers_nothing_thanks(String)"
+  "location": "SmartChatBotAmenitiesStepDefinitions.Bot_routes_prospect_to_an_agent(String)"
 });
 formatter.result({
-  "duration": 2112570900,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "Thank you for chatting with me today! If you have additional questions, please feel free to start a new chat or call us at (972) 484-5691",
-      "offset": 26
-    }
-  ],
-  "location": "SmartChatBotOfficeHoursStepDefinitions.Bot_responds_with_Got_It(String)"
-});
-formatter.result({
-  "duration": 2912903400,
-  "status": "passed"
-});
-formatter.match({
-  "location": "SmartChatBotOfficeHoursStepDefinitions.The_rate_conversation_button_is_displayed()"
-});
-formatter.result({
-  "duration": 1937409600,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.after({
-  "duration": 1135266200,
+  "duration": 1552025000,
   "status": "passed"
 });
 formatter.before({
-  "duration": 1764286500,
+  "duration": 2336014600,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 22,
+  "line": 23,
   "name": "Rendering Consumer Widget Page",
   "description": "",
   "id": "chattest-html-rendering;rendering-consumer-widget-page;;4",
@@ -381,7 +489,7 @@ formatter.step({
 });
 formatter.step({
   "line": 10,
-  "name": "Prospect asks about parking policy Parking cost",
+  "name": "Prospect asks about amenities Gym?",
   "matchedColumns": [
     2
   ],
@@ -389,27 +497,42 @@ formatter.step({
 });
 formatter.step({
   "line": 11,
-  "name": "Bot responds Parking Policy question \"Parking policy: Open parking at no charge\"",
-  "keyword": "And "
+  "name": "Bot says that it needs more info \"Sounds like you have a question about our amenities, before I can get you over to someone who can help I need a little more information.\"",
+  "keyword": "Then "
 });
 formatter.step({
   "line": 12,
-  "name": "Bot asks if it can help with something else \"What else can I help you with?\"",
+  "name": "Bot asks for prospects first name \"What\u0027s your first name?\"",
   "keyword": "And "
 });
 formatter.step({
   "line": 13,
-  "name": "Prospect answers nothing thanks \"Nothing\"",
+  "name": "Prospect responses with their first name \"Aryana\"",
   "keyword": "And "
 });
 formatter.step({
   "line": 14,
-  "name": "Bot responds with Got It \"Thank you for chatting with me today! If you have additional questions, please feel free to start a new chat or call us at (972) 484-5691\"",
+  "name": "Bot asks for prospects last name \"And your last name?\"",
   "keyword": "And "
 });
 formatter.step({
   "line": 15,
-  "name": "The rate conversation button is displayed",
+  "name": "Prospect responds with their last name \"Rezai\"",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 16,
+  "name": "Bot asks for prospects email or phone number \"What is your phone number or email address?\"",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 17,
+  "name": "Prospect responds with their phone number or email \"4692165826\"",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 18,
+  "name": "Bot routes prospect to an agent \"Let me get you to an agent that can help.\"",
   "keyword": "And "
 });
 formatter.match({
@@ -426,97 +549,136 @@ formatter.match({
   "location": "CucumberStepDefinitions.open_site(String,String)"
 });
 formatter.result({
-  "duration": 11713002100,
+  "duration": 23058636400,
   "status": "passed"
 });
 formatter.match({
   "location": "SmartChatBotTestStepDefinitions.Consumer_selects_CHAT_tab()"
 });
 formatter.result({
-  "duration": 694485700,
+  "duration": 785903200,
   "status": "passed"
 });
 formatter.match({
   "location": "SmartChatBotTestStepDefinitions.Bot_generates_auto_greeting()"
 });
 formatter.result({
-  "duration": 17174224300,
+  "duration": 20387879300,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "Parking cost",
+      "val": "Gym?",
+      "offset": 30
+    }
+  ],
+  "location": "SmartChatBotAmenitiesStepDefinitions.Prospect_asks_about_amenities(String)"
+});
+formatter.result({
+  "duration": 1242896500,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Sounds like you have a question about our amenities, before I can get you over to someone who can help I need a little more information.",
+      "offset": 34
+    }
+  ],
+  "location": "SmartChatBotAmenitiesStepDefinitions.Bot_says_that_it_needs_more_info(String)"
+});
+formatter.result({
+  "duration": 4595701100,
+  "error_message": "java.lang.AssertionError\r\n\tat org.junit.Assert.fail(Assert.java:86)\r\n\tat org.junit.Assert.assertTrue(Assert.java:41)\r\n\tat org.junit.Assert.assertTrue(Assert.java:52)\r\n\tat com.realpage.ui.SmartChatBotAmenities.SmartChatBotAmenitiesStepDefinitions.Bot_says_that_it_needs_more_info(SmartChatBotAmenitiesStepDefinitions.java:104)\r\n\tat ✽.Then Bot says that it needs more info \"Sounds like you have a question about our amenities, before I can get you over to someone who can help I need a little more information.\"(src/test/resources/com/realpage/components/SmartChatBotAmenities/smartchatbotamenities.feature:11)\r\n",
+  "status": "failed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "What\u0027s your first name?",
       "offset": 35
     }
   ],
-  "location": "SmartChatBotParkingPolicyStepDefinitions.Prospect_asks_about_parking_policy(String)"
+  "location": "SmartChatBotAmenitiesStepDefinitions.Bot_asks_for_prospects_first_name(String)"
 });
 formatter.result({
-  "duration": 1190195500,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "Parking policy: Open parking at no charge",
-      "offset": 38
+      "val": "Aryana",
+      "offset": 42
     }
   ],
-  "location": "SmartChatBotParkingPolicyStepDefinitions.Bot_responds_Parking_Policy_question(String)"
+  "location": "SmartChatBotAmenitiesStepDefinitions.Prospect_responses_with_their_first_name(String)"
 });
 formatter.result({
-  "duration": 3551095400,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "What else can I help you with?",
-      "offset": 45
+      "val": "And your last name?",
+      "offset": 34
     }
   ],
-  "location": "SmartChatBotOfficeHoursStepDefinitions.Bot_asks_if_it_can_help_with_something_else(String)"
+  "location": "SmartChatBotAmenitiesStepDefinitions.Bot_asks_for_prospects_last_name(String)"
 });
 formatter.result({
-  "duration": 2011762100,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "Nothing",
+      "val": "Rezai",
+      "offset": 40
+    }
+  ],
+  "location": "SmartChatBotAmenitiesStepDefinitions.Prospect_responds_with_their_last_name(String)"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "What is your phone number or email address?",
+      "offset": 46
+    }
+  ],
+  "location": "SmartChatBotAmenitiesStepDefinitions.Bot_asks_for_prospects_email_or_phone_number(String)"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "4692165826",
+      "offset": 52
+    }
+  ],
+  "location": "SmartChatBotAmenitiesStepDefinitions.Prospect_responds_with_their_phone_number_or_email(String)"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Let me get you to an agent that can help.",
       "offset": 33
     }
   ],
-  "location": "SmartChatBotOfficeHoursStepDefinitions.Prospect_answers_nothing_thanks(String)"
+  "location": "SmartChatBotAmenitiesStepDefinitions.Bot_routes_prospect_to_an_agent(String)"
 });
 formatter.result({
-  "duration": 2109174100,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "Thank you for chatting with me today! If you have additional questions, please feel free to start a new chat or call us at (972) 484-5691",
-      "offset": 26
-    }
-  ],
-  "location": "SmartChatBotOfficeHoursStepDefinitions.Bot_responds_with_Got_It(String)"
-});
-formatter.result({
-  "duration": 3179552700,
-  "status": "passed"
-});
-formatter.match({
-  "location": "SmartChatBotOfficeHoursStepDefinitions.The_rate_conversation_button_is_displayed()"
-});
-formatter.result({
-  "duration": 1991117500,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.after({
-  "duration": 1074809100,
+  "duration": 4232616900,
   "status": "passed"
 });
 });
